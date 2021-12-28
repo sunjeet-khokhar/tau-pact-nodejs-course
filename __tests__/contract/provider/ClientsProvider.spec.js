@@ -1,6 +1,7 @@
 const path = require("path")
 const { Verifier } = require("@pact-foundation/pact")
 const { server, importData } = require("../../../src/provider")
+const { TIMEOUT } = require("dns")
 
 const SERVER_URL = "http://localhost:8081"
 
@@ -21,7 +22,8 @@ server.listen(8081, () => {
             consumerVersionTags: ["dev"],
             providerVersionTags: ["dev"],
             publishVerificationResult: true,
-            providerVersion: "1.0.1"
+            providerVersion: "1.0.4",
+            jest: TIMEOUT='10000'
           }
         return new Verifier(opts).verifyProvider().then(output => {
             console.log("Pact Verification Complete!")
