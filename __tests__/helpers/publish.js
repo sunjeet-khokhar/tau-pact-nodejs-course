@@ -5,8 +5,8 @@ let opts = {
     pactFilesOrDirs: [path.resolve(process.cwd(), "__tests__/contract/pacts")],
     pactBroker: "https://trivialsearch.pactflow.io/",
     pactBrokerToken: 'HTAxLcRZ8iHhT_12HevZYA',
-    consumerVersion: "1.0.1",
-    providerVersion: "1.0.1",
+    consumerVersion: "1.0.3",
+    providerVersion: "1.0.3",
     tags: "dev"
 }
 

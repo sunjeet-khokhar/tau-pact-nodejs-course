@@ -11,7 +11,7 @@ server.listen(8081, () => {
   })
   
   describe("Clients Service Verification", () => {
-    it("validates the expectations of Client Service", () => {
+    it("validates the expectations of Client Service", async () => {
       let opts = {
             provider: "Clients Service",
             logLevel: "DEBUG",
@@ -25,7 +25,7 @@ server.listen(8081, () => {
             providerVersion: "1.0.4",
             jest: TIMEOUT='10000'
           }
-        return new Verifier(opts).verifyProvider().then(output => {
+        await new Verifier(opts).verifyProvider().then(output => {
             console.log("Pact Verification Complete!")
             console.log(output)
         })
