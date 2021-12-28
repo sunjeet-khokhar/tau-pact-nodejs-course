@@ -11,6 +11,7 @@ on:
     
 env:
   PACT_BROKER_TOKEN: ${{ secrets.PACTFLOW_TOKEN }}
+  TOKEN_TWO: 'Testing'
 
 jobs:
   build:
