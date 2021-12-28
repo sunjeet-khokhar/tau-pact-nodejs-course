@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: [ master ]
     
-env:
+#env:
   #PACT_BROKER_TOKEN: ${{ secrets.PACTFLOW_TOKEN }}
 
 jobs:
