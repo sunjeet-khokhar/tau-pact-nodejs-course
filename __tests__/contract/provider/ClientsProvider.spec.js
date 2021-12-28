@@ -20,7 +20,7 @@ server.listen(8081, () => {
             //pactUrls: [path.resolve(process.cwd(), "__tests__/contract/pacts/frontend-clientsservice.json")],
             pactUrls: ['https://trivialsearch.pactflow.io/pacts/provider/ClientsService/consumer/Frontend/version/1.0.1'],
             //pactBrokerToken: PACT_BROKER_TOKEN,
-            pactBrokerToken: process.env.PACT_BROKER_TOKEN1,
+            pactBrokerToken: '111111',
             consumerVersionTags: ["dev"],
             providerVersionTags: ["dev"],
             publishVerificationResult: true,
