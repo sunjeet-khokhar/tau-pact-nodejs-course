@@ -10,7 +10,7 @@ on:
     branches: [ master ]
     
 env:
-  PACT_BROKER_TOKEN: ${{ secrets.PACTFLOW_TOKEN }}
+  #PACT_BROKER_TOKEN: ${{ secrets.PACTFLOW_TOKEN }}
 
 jobs:
   build:
