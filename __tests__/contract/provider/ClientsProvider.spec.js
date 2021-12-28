@@ -12,6 +12,7 @@ server.listen(8081, () => {
   
   describe("Clients Service Verification", () => {
     it("validates the expectations of Client Service", () => {
+      jest.setTimeout(5500);
       let opts = {
             provider: "Clients Service",
             logLevel: "DEBUG",
