@@ -1,4 +1,4 @@
-[![Code Quality](https://www.code-inspector.com/project/4702/score/svg)](https://frontend.code-inspector.com/project/4702/dashboard)
+
 
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/rafaelaazevedo/tau-pact-nodejs-course/blob/master/LICENSE)
 
