@@ -8,6 +8,7 @@ const SERVER_URL = "http://localhost:8081"
 server.listen(8081, () => {
     importData()
     console.log(`Clients Service listening on ${SERVER_URL}`)
+    console.log('Process.env looks like ---->')
   })
   
   describe("Clients Service Verification", () => {
